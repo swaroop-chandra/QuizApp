@@ -1,0 +1,4 @@
+currencyDisplayValue (currency) {
+      currency = parseFloat(currency).toFixed(2).replace(/(\d)(?=(\d{2})+\d\.)/g, '$1,')
+      return currency.substr(0, (currency.length - 3))
+    }   
